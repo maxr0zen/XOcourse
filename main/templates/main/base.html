@@ -1,0 +1,73 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <script src="{% static 'app.js' %}"></script>
+    <title>XO - game</title>
+  <link rel="icon" href="{% static 'main/img/ico.jpg' %}">
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link
+      href='https://fonts.googleapis.com/css/family="Roboto100"'
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <table class="center">
+      <tr>
+        <td id="0 0"></td>
+        <td id="0 1"></td>
+        <td id="0 2"></td>
+      </tr>
+      <tr>
+        <td id="1 0"></td>
+        <td id="1 1"></td>
+        <td id="1 2"></td>
+      </tr>
+      <tr>
+        <td id="2 0"></td>
+        <td id="2 1"></td>
+        <td id="2 2"></td>
+      </tr>
+    </table>
+
+    <div class="button-wrapper">
+      <button class="button">Play</button>
+    </div>
+    <div class="about">made by @maxr0zen, follow</div>
+    <div class="links">
+      <a href="https://github.com/maxr0zen">
+        <img class="photos"  src="{% static 'main/img/colour_edit_github_logo.png' %}" />
+      </a>
+    </div>
+    <div>
+      <div class="light x1"></div>
+      <div class="light x2"></div>
+      <div class="light x3"></div>
+      <div class="light x4"></div>
+      <div class="light x5"></div>
+      <div class="light x6"></div>
+      <div class="light x7"></div>
+      <div class="light x8"></div>
+      <div class="light x9"></div>
+    </div>
+
+
+
+    <div class="modal">
+        <ul class="modal__list">
+            <li id="no-bot" class="modal__item"><a>Без бота</a></li>
+            <li class="modal__item">Простой бот: <a id="ez-x" href="#">x</a> | <a id="ez-o" href="#">o</a></li>
+            <li class="modal__item"><a>Сложный бот:  <a id="hard-x" href="#">x</a> | <a id="hard-o" href="#">o</a></a></li>
+        </ul>
+    </div>
+  <script src="{% static 'main/js/app.js' %}"></script>
+  </body>
+</html>
